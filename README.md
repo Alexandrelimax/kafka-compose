@@ -35,7 +35,8 @@ A arquitetura do projeto é composta por quatro componentes principais:
    - Armazena os dados confiáveis das ofertas em uma tabela particionada.
    - Permite consultas SQL para análises e relatórios.
 
-   **![Imagem da arquitetura](path/to/scraping_image.png)**
+   ![Screenshot_31](https://github.com/user-attachments/assets/95f2a8b0-d451-404d-ae36-afadfb410af8)
+
 
 ---
 
@@ -45,7 +46,7 @@ A arquitetura do projeto é composta por quatro componentes principais:
    - O scraper é implementado em Python e acessa a página de promoções do Mercado Livre.
    - Envia os dados formatados para o Kafka através de um producer FastAPI.
 
-   **![Imagem do Scraping](path/to/scraping_image.png)**
+![Screenshot_32](https://github.com/user-attachments/assets/9b8a233a-917a-4a8d-b916-c5bd8cc4ef2a)
 
 2. **Producer Kafka**
    - Envia mensagens para o tópico `deal-of-the-day` no cluster Kafka.
@@ -60,7 +61,8 @@ A arquitetura do projeto é composta por quatro componentes principais:
 5. **BigQuery**
    - Os dados finais ficam armazenados na tabela `daily_offers`, disponíveis para consulta.
 
-   **![Imagem do Pipeline](path/to/pipeline_image.png)**
+
+   ![Screenshot_28](https://github.com/user-attachments/assets/e7385ce7-1d38-4b0b-9735-318c3b876d3d)
 
 ---
 
