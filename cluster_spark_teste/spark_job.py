@@ -33,6 +33,7 @@ df = spark.readStream \
     .option("kafka.bootstrap.servers", "kafka-1:9092,kafka-2:9093,kafka-3:9094") \
     .option("subscribe", "deal-of-the-day") \
     .option("startingOffsets", "earliest") \
+    .option("failOnDataLoss", "false") \
     .load()
 
 
