@@ -109,9 +109,3 @@ A infraestrutura do projeto é provisionada no Google Cloud e gerenciada com Doc
 - Docker e Docker Compose instalados.
 - Conta de serviço no Google Cloud com permissões para BigQuery e Storage.
 
-### **2. Configurar Variáveis**
-Crie um arquivo `.env`:
-```env
-TABLE_NAME=daily_offers
-BUCKET_NAME=seu-bucket-checkpoints
-GOOGLE_APPLICATION_CREDENTIALS=/caminho/para/service_account.json
