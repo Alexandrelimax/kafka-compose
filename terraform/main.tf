@@ -29,12 +29,12 @@ module "compute_instance" {
 }
 
 
-# module "dataproc" {
-#   source               = "./modules/dataproc"
-#   cluster_name         = var.cluster_name
-#   region               = var.region
-#   master_machine_type  = var.master_machine_type
-#   worker_machine_type  = var.worker_machine_type
-#   num_workers          = var.num_workers
-#   subnet_id            = module.vpc.subnet_id
-# }
+module "dataproc" {
+  source               = "./modules/dataproc"
+  cluster_name         = var.cluster_name
+  region               = var.region
+  master_machine_type  = var.master_machine_type
+  worker_machine_type  = var.worker_machine_type
+  num_workers          = var.num_workers
+  subnet_id            = module.vpc.subnet_id
+}
