@@ -12,8 +12,13 @@ resource "google_compute_instance" "compute_instance" {
   network_interface {
     network    = var.vpc_network_id
     subnetwork = var.subnet_id
-    access_config {} # Necessário para IP público
   }
 
-  metadata_startup_script = var.startup_script
+  metadata = {
+    ssh-keys           = "${var.ssh_user}:${file(var.ssh_public_key_path)}"
+    startup-script     = file(var.startup_script_path)
+  }
+
+  tags = var.network_tags
+  
 }

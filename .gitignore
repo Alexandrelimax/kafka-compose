@@ -170,3 +170,5 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 service_account.json
+terraform.tfvars
+values.tfvars
