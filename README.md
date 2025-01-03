@@ -1,4 +1,4 @@
-# **Projeto Kafka-Compose: Scraping, Kafka e BigQuery**
+# **Projeto Kafka-Compose: Stream Pipeline**
 
 Este projeto é uma implementação prática de um pipeline de dados em tempo real que utiliza Kafka, Spark e BigQuery. O objetivo é realizar o scraping de ofertas do Mercado Livre, processar as informações usando Apache Kafka e Apache Spark, e armazenar os resultados no Google BigQuery.
 
